@@ -1,0 +1,1258 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 3,
+            "args": {
+                "name": "/device:GPU:0/stream:16 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 4,
+            "args": {
+                "name": "/device:GPU:0/stream:16 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 5,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 6,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:GPU:0 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 7,
+            "args": {
+                "name": "/device:GPU:0/memcpy Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 8,
+            "args": {
+                "name": "/device:GPU:0/memcpy Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 9,
+            "args": {
+                "name": "/device:GPU:0/stream:14 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 10,
+            "args": {
+                "name": "/device:GPU:0/stream:14 Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 11,
+            "args": {
+                "name": "/device:GPU:0/stream:all Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 12,
+            "args": {
+                "name": "/device:GPU:0/stream:all Tensors"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 13,
+            "args": {
+                "name": "/device:GPU:0/stream:15 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 14,
+            "args": {
+                "name": "/device:GPU:0/stream:15 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650072,
+            "dur": 5,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650089,
+            "dur": 6,
+            "args": {
+                "name": "_arg_input_labels_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650101,
+            "dur": 1,
+            "args": {
+                "name": "_arg_input_measures_0_1",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Retval",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338651257,
+            "dur": 4,
+            "args": {
+                "name": "_retval_mean_squared_error/value_0_0",
+                "op": "_Retval",
+                "input0": "mean_squared_error/value/_27"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/value",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650929,
+            "id": 0
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/value",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338651257,
+            "id": 0
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYDtoH",
+            "pid": 3,
+            "tid": 0,
+            "ts": 1557085338651183,
+            "dur": 1,
+            "args": {
+                "name": "edge_62_mean_squared_error/value",
+                "op": "MEMCPYDtoH"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650068,
+            "dur": 16,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650096,
+            "dur": 20,
+            "args": {
+                "name": "mean_squared_error/ones_like",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650120,
+            "dur": 13,
+            "args": {
+                "name": "flatten/strided_slice/stack",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650136,
+            "dur": 6,
+            "args": {
+                "name": "flatten/strided_slice/stack_1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650144,
+            "dur": 5,
+            "args": {
+                "name": "flatten/Reshape/shape/1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650150,
+            "dur": 11,
+            "args": {
+                "name": "dense/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650163,
+            "dur": 6,
+            "args": {
+                "name": "dense/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650171,
+            "dur": 8,
+            "args": {
+                "name": "dense_1/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650181,
+            "dur": 12,
+            "args": {
+                "name": "dense_1/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650196,
+            "dur": 5,
+            "args": {
+                "name": "mean_squared_error/Const",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650203,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/Greater/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650209,
+            "dur": 4,
+            "args": {
+                "name": "dense/kernel/read",
+                "op": "Identity",
+                "input0": "dense/kernel"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650215,
+            "dur": 3,
+            "args": {
+                "name": "dense/bias/read",
+                "op": "Identity",
+                "input0": "dense/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650219,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/kernel/read",
+                "op": "Identity",
+                "input0": "dense_1/kernel"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650224,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/bias/read",
+                "op": "Identity",
+                "input0": "dense_1/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650491,
+            "dur": 15,
+            "args": {
+                "name": "flatten/Shape",
+                "op": "Shape",
+                "input0": "_arg_input_measures_0_1/_23"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_input_measures_0_1",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650102,
+            "id": 1
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_input_measures_0_1",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650491,
+            "id": 1
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "StridedSlice",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650511,
+            "dur": 11,
+            "args": {
+                "name": "flatten/strided_slice",
+                "op": "StridedSlice",
+                "input0": "flatten/Shape",
+                "input1": "flatten/strided_slice/stack",
+                "input2": "flatten/strided_slice/stack_1",
+                "input3": "flatten/strided_slice/stack_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Pack",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650525,
+            "dur": 8,
+            "args": {
+                "name": "flatten/Reshape/shape",
+                "op": "Pack",
+                "input0": "flatten/strided_slice",
+                "input1": "flatten/Reshape/shape/1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Reshape",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650535,
+            "dur": 4,
+            "args": {
+                "name": "flatten/Reshape",
+                "op": "Reshape",
+                "input0": "_arg_input_measures_0_1/_23",
+                "input1": "flatten/Reshape/shape"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_input_measures_0_1",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650102,
+            "id": 2
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_input_measures_0_1",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650535,
+            "id": 2
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650542,
+            "dur": 60,
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul",
+                "input0": "flatten/Reshape",
+                "input1": "dense/kernel/read"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650610,
+            "dur": 25,
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense/MatMul",
+                "input1": "dense/bias/read"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650638,
+            "dur": 18,
+            "args": {
+                "name": "Relu",
+                "op": "Relu",
+                "input0": "dense/BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650658,
+            "dur": 28,
+            "args": {
+                "name": "dense_1/MatMul",
+                "op": "MatMul",
+                "input0": "Relu",
+                "input1": "dense_1/kernel/read"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650688,
+            "dur": 15,
+            "args": {
+                "name": "dense_1/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense_1/MatMul",
+                "input1": "dense_1/bias/read"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "SquaredDifference",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650705,
+            "dur": 20,
+            "args": {
+                "name": "mean_squared_error/SquaredDifference",
+                "op": "SquaredDifference",
+                "input0": "dense_1/BiasAdd",
+                "input1": "_arg_input_labels_0_0/_25"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "_arg_input_labels_0_0",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557085338650095,
+            "id": 3
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "_arg_input_labels_0_0",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650705,
+            "id": 3
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650727,
+            "dur": 19,
+            "args": {
+                "name": "mean_squared_error/Mul",
+                "op": "Mul",
+                "input0": "mean_squared_error/SquaredDifference",
+                "input1": "mean_squared_error/ones_like"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650748,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like/Shape",
+                "op": "Shape",
+                "input0": "mean_squared_error/SquaredDifference"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650756,
+            "dur": 20,
+            "args": {
+                "name": "mean_squared_error/Sum",
+                "op": "Sum",
+                "input0": "mean_squared_error/Mul",
+                "input1": "mean_squared_error/Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Fill",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650778,
+            "dur": 17,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like",
+                "op": "Fill",
+                "input0": "mean_squared_error/num_present/broadcast_weights/ones_like/Shape",
+                "input1": "mean_squared_error/ones_like"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650798,
+            "dur": 15,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights",
+                "op": "Mul",
+                "input0": "mean_squared_error/ones_like",
+                "input1": "mean_squared_error/num_present/broadcast_weights/ones_like"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650816,
+            "dur": 17,
+            "args": {
+                "name": "mean_squared_error/num_present",
+                "op": "Sum",
+                "input0": "mean_squared_error/num_present/broadcast_weights",
+                "input1": "mean_squared_error/Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Greater",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650835,
+            "dur": 18,
+            "args": {
+                "name": "mean_squared_error/Greater",
+                "op": "Greater",
+                "input0": "mean_squared_error/num_present",
+                "input1": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Equal",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650854,
+            "dur": 18,
+            "args": {
+                "name": "mean_squared_error/Equal",
+                "op": "Equal",
+                "input0": "mean_squared_error/num_present",
+                "input1": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650873,
+            "dur": 21,
+            "args": {
+                "name": "mean_squared_error/Select",
+                "op": "Select",
+                "input0": "mean_squared_error/Equal",
+                "input1": "mean_squared_error/ones_like",
+                "input2": "mean_squared_error/num_present"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650896,
+            "dur": 17,
+            "args": {
+                "name": "mean_squared_error/div",
+                "op": "RealDiv",
+                "input0": "mean_squared_error/Sum",
+                "input1": "mean_squared_error/Select"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 5,
+            "tid": 0,
+            "ts": 1557085338650915,
+            "dur": 14,
+            "args": {
+                "name": "mean_squared_error/value",
+                "op": "Select",
+                "input0": "mean_squared_error/Greater",
+                "input1": "mean_squared_error/div",
+                "input2": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1557085338650398,
+            "dur": 19,
+            "args": {
+                "name": "edge_60__arg_input_measures_0_1",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1557085338650570,
+            "dur": 1,
+            "args": {
+                "name": "edge_58__arg_input_labels_0_0",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYDtoH",
+            "pid": 7,
+            "tid": 0,
+            "ts": 1557085338651183,
+            "dur": 1,
+            "args": {
+                "name": "edge_62_mean_squared_error/value",
+                "op": "MEMCPYDtoH"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651036,
+            "dur": 31,
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651069,
+            "dur": 9,
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651081,
+            "dur": 6,
+            "args": {
+                "name": "Relu",
+                "op": "Relu"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651090,
+            "dur": 11,
+            "args": {
+                "name": "dense_1/MatMul",
+                "op": "MatMul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651104,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/BiasAdd",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "SquaredDifference",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651110,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/SquaredDifference",
+                "op": "SquaredDifference"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651116,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/Mul",
+                "op": "Mul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651122,
+            "dur": 5,
+            "args": {
+                "name": "mean_squared_error/Sum",
+                "op": "Sum"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Fill",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651130,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like",
+                "op": "Fill"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651136,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights",
+                "op": "Mul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651142,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present",
+                "op": "Sum"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Greater",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651148,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/Greater",
+                "op": "Greater"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Equal",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651154,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/Equal",
+                "op": "Equal"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651160,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/Select",
+                "op": "Select"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651166,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/div",
+                "op": "RealDiv"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 9,
+            "tid": 0,
+            "ts": 1557085338651174,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/value",
+                "op": "Select"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651036,
+            "dur": 31,
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651069,
+            "dur": 9,
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651081,
+            "dur": 6,
+            "args": {
+                "name": "Relu",
+                "op": "Relu"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651090,
+            "dur": 11,
+            "args": {
+                "name": "dense_1/MatMul",
+                "op": "MatMul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651104,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/BiasAdd",
+                "op": "BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "SquaredDifference",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651110,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/SquaredDifference",
+                "op": "SquaredDifference"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651116,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/Mul",
+                "op": "Mul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651122,
+            "dur": 5,
+            "args": {
+                "name": "mean_squared_error/Sum",
+                "op": "Sum"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Fill",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651130,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like",
+                "op": "Fill"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651136,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights",
+                "op": "Mul"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651142,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/num_present",
+                "op": "Sum"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Greater",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651148,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/Greater",
+                "op": "Greater"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Equal",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651154,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/Equal",
+                "op": "Equal"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651160,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/Select",
+                "op": "Select"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651166,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/div",
+                "op": "RealDiv"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 11,
+            "tid": 0,
+            "ts": 1557085338651174,
+            "dur": 3,
+            "args": {
+                "name": "mean_squared_error/value",
+                "op": "Select"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 13,
+            "tid": 0,
+            "ts": 1557085338650398,
+            "dur": 19,
+            "args": {
+                "name": "edge_60__arg_input_measures_0_1",
+                "op": "MEMCPYHtoD"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MEMCPYHtoD",
+            "pid": 13,
+            "tid": 0,
+            "ts": 1557085338650570,
+            "dur": 1,
+            "args": {
+                "name": "edge_58__arg_input_labels_0_0",
+                "op": "MEMCPYHtoD"
+            }
+        }
+    ]
+}

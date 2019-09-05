@@ -1,0 +1,1193 @@
+{
+    "traceEvents": [
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 0,
+            "args": {
+                "name": "Allocators"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 1,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Compute"
+            }
+        },
+        {
+            "name": "process_name",
+            "ph": "M",
+            "pid": 2,
+            "args": {
+                "name": "/job:localhost/replica:0/task:0/device:CPU:0 Tensors"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "NoOp",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381719,
+            "dur": 6,
+            "args": {
+                "name": "_SOURCE",
+                "op": "NoOp"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381756,
+            "dur": 12,
+            "args": {
+                "name": "dense/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381758,
+            "dur": 13,
+            "args": {
+                "name": "dense_2/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381762,
+            "dur": 7,
+            "args": {
+                "name": "mean_squared_error/ones_like",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 3,
+            "ts": 1557153772381756,
+            "dur": 20,
+            "args": {
+                "name": "dense_1/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 4,
+            "ts": 1557153772381755,
+            "dur": 14,
+            "args": {
+                "name": "dense_1/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381779,
+            "dur": 4,
+            "args": {
+                "name": "flatten/strided_slice/stack",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381778,
+            "dur": 5,
+            "args": {
+                "name": "dense_2/kernel/read",
+                "op": "Identity",
+                "input0": "dense_2/kernel"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381778,
+            "dur": 4,
+            "args": {
+                "name": "dense/bias/read",
+                "op": "Identity",
+                "input0": "dense/bias"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense/bias",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381768,
+            "id": 0
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense/bias",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381778,
+            "id": 0
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381783,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/kernel/read",
+                "op": "Identity",
+                "input0": "dense_1/kernel"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_1/kernel",
+            "pid": 1,
+            "tid": 4,
+            "ts": 1557153772381769,
+            "id": 1
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_1/kernel",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381783,
+            "id": 1
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381785,
+            "dur": 3,
+            "args": {
+                "name": "flatten/strided_slice/stack_1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 5,
+            "ts": 1557153772381764,
+            "dur": 8,
+            "args": {
+                "name": "dense_2/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381787,
+            "dur": 4,
+            "args": {
+                "name": "dense_3/bias",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381793,
+            "dur": 6,
+            "args": {
+                "name": "flatten/Reshape/shape/1",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381793,
+            "dur": 3,
+            "args": {
+                "name": "dense_3/bias/read",
+                "op": "Identity",
+                "input0": "dense_3/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 6,
+            "ts": 1557153772381752,
+            "dur": 20,
+            "args": {
+                "name": "dense/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381802,
+            "dur": 2,
+            "args": {
+                "name": "mean_squared_error/Const",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381799,
+            "dur": 7,
+            "args": {
+                "name": "dense_2/bias/read",
+                "op": "Identity",
+                "input0": "dense_2/bias"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_2/bias",
+            "pid": 1,
+            "tid": 5,
+            "ts": 1557153772381772,
+            "id": 2
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_2/bias",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381799,
+            "id": 2
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "VariableV2",
+            "pid": 1,
+            "tid": 7,
+            "ts": 1557153772381766,
+            "dur": 9,
+            "args": {
+                "name": "dense_3/kernel",
+                "op": "VariableV2"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381805,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/Greater/y",
+                "op": "Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381808,
+            "dur": 5,
+            "args": {
+                "name": "dense/kernel/read",
+                "op": "Identity",
+                "input0": "dense/kernel"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense/kernel",
+            "pid": 1,
+            "tid": 6,
+            "ts": 1557153772381772,
+            "id": 3
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense/kernel",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381808,
+            "id": 3
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 3,
+            "ts": 1557153772381780,
+            "dur": 3,
+            "args": {
+                "name": "dense_1/bias/read",
+                "op": "Identity",
+                "input0": "dense_1/bias"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381815,
+            "dur": 5,
+            "args": {
+                "name": "_arg_input_labels_0_0",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Identity",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381817,
+            "dur": 6,
+            "args": {
+                "name": "dense_3/kernel/read",
+                "op": "Identity",
+                "input0": "dense_3/kernel"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_3/kernel",
+            "pid": 1,
+            "tid": 7,
+            "ts": 1557153772381775,
+            "id": 4
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_3/kernel",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381817,
+            "id": 4
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Arg",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381822,
+            "dur": 3,
+            "args": {
+                "name": "_arg_input_measures_0_1",
+                "op": "_Arg"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381829,
+            "dur": 13,
+            "args": {
+                "name": "flatten/Shape",
+                "op": "Shape",
+                "input0": "_arg_input_measures_0_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "StridedSlice",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381847,
+            "dur": 12,
+            "args": {
+                "name": "flatten/strided_slice",
+                "op": "StridedSlice",
+                "input0": "flatten/Shape",
+                "input1": "flatten/strided_slice/stack",
+                "input2": "flatten/strided_slice/stack_1",
+                "input3": "flatten/strided_slice/stack_1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Pack",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381864,
+            "dur": 8,
+            "args": {
+                "name": "flatten/Reshape/shape",
+                "op": "Pack",
+                "input0": "flatten/strided_slice",
+                "input1": "flatten/Reshape/shape/1"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Reshape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381874,
+            "dur": 3,
+            "args": {
+                "name": "flatten/Reshape",
+                "op": "Reshape",
+                "input0": "_arg_input_measures_0_1",
+                "input1": "flatten/Reshape/shape"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381879,
+            "dur": 9476,
+            "args": {
+                "name": "dense/MatMul",
+                "op": "MatMul",
+                "input0": "flatten/Reshape",
+                "input1": "dense/kernel/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense/kernel/read",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381813,
+            "id": 5
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense/kernel/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381879,
+            "id": 5
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772391383,
+            "dur": 2847,
+            "args": {
+                "name": "dense/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense/MatMul",
+                "input1": "dense/bias/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense/bias/read",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381782,
+            "id": 6
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense/bias/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772391383,
+            "id": 6
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772394244,
+            "dur": 2837,
+            "args": {
+                "name": "Relu",
+                "op": "Relu",
+                "input0": "dense/BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772397099,
+            "dur": 441333,
+            "args": {
+                "name": "dense_1/MatMul",
+                "op": "MatMul",
+                "input0": "Relu",
+                "input1": "dense_1/kernel/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_1/kernel/read",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381786,
+            "id": 7
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_1/kernel/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772397099,
+            "id": 7
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772838448,
+            "dur": 1136,
+            "args": {
+                "name": "dense_1/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense_1/MatMul",
+                "input1": "dense_1/bias/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_1/bias/read",
+            "pid": 1,
+            "tid": 3,
+            "ts": 1557153772381783,
+            "id": 8
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_1/bias/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772838448,
+            "id": 8
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772839592,
+            "dur": 1363,
+            "args": {
+                "name": "Relu_1",
+                "op": "Relu",
+                "input0": "dense_1/BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772840967,
+            "dur": 122574,
+            "args": {
+                "name": "dense_2/MatMul",
+                "op": "MatMul",
+                "input0": "Relu_1",
+                "input1": "dense_2/kernel/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_2/kernel/read",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381783,
+            "id": 9
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_2/kernel/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772840967,
+            "id": 9
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772963560,
+            "dur": 623,
+            "args": {
+                "name": "dense_2/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense_2/MatMul",
+                "input1": "dense_2/bias/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_2/bias/read",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381806,
+            "id": 10
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_2/bias/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772963560,
+            "id": 10
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Relu",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772964191,
+            "dur": 535,
+            "args": {
+                "name": "Relu_2",
+                "op": "Relu",
+                "input0": "dense_2/BiasAdd"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "MatMul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772964734,
+            "dur": 1336,
+            "args": {
+                "name": "dense_3/MatMul",
+                "op": "MatMul",
+                "input0": "Relu_2",
+                "input1": "dense_3/kernel/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_3/kernel/read",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381823,
+            "id": 11
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_3/kernel/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772964734,
+            "id": 11
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "BiasAdd",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966076,
+            "dur": 12,
+            "args": {
+                "name": "dense_3/BiasAdd",
+                "op": "BiasAdd",
+                "input0": "dense_3/MatMul",
+                "input1": "dense_3/bias/read"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "dense_3/bias/read",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772381796,
+            "id": 12
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "dense_3/bias/read",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966076,
+            "id": 12
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "SquaredDifference",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966094,
+            "dur": 7,
+            "args": {
+                "name": "mean_squared_error/SquaredDifference",
+                "op": "SquaredDifference",
+                "input0": "dense_3/BiasAdd",
+                "input1": "_arg_input_labels_0_0"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Shape",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966111,
+            "dur": 7,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like/Shape",
+                "op": "Shape",
+                "input0": "mean_squared_error/SquaredDifference"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Fill",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966123,
+            "dur": 7,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights/ones_like",
+                "op": "Fill",
+                "input0": "mean_squared_error/num_present/broadcast_weights/ones_like/Shape",
+                "input1": "mean_squared_error/ones_like"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381769,
+            "id": 13
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966123,
+            "id": 13
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966122,
+            "dur": 14,
+            "args": {
+                "name": "mean_squared_error/Mul",
+                "op": "Mul",
+                "input0": "mean_squared_error/SquaredDifference",
+                "input1": "mean_squared_error/ones_like"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/SquaredDifference",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966101,
+            "id": 14
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/SquaredDifference",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966122,
+            "id": 14
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381769,
+            "id": 15
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966122,
+            "id": 15
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Mul",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966136,
+            "dur": 5,
+            "args": {
+                "name": "mean_squared_error/num_present/broadcast_weights",
+                "op": "Mul",
+                "input0": "mean_squared_error/ones_like",
+                "input1": "mean_squared_error/num_present/broadcast_weights/ones_like"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381769,
+            "id": 16
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966136,
+            "id": 16
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966143,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/num_present",
+                "op": "Sum",
+                "input0": "mean_squared_error/num_present/broadcast_weights",
+                "input1": "mean_squared_error/Const"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Sum",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966141,
+            "dur": 10,
+            "args": {
+                "name": "mean_squared_error/Sum",
+                "op": "Sum",
+                "input0": "mean_squared_error/Mul",
+                "input1": "mean_squared_error/Const"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Const",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381804,
+            "id": 17
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Const",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966141,
+            "id": 17
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Greater",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966160,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/Greater",
+                "op": "Greater",
+                "input0": "mean_squared_error/num_present",
+                "input1": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Equal",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966156,
+            "dur": 13,
+            "args": {
+                "name": "mean_squared_error/Equal",
+                "op": "Equal",
+                "input0": "mean_squared_error/num_present",
+                "input1": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/num_present",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966149,
+            "id": 18
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/num_present",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966156,
+            "id": 18
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Greater/y",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772381811,
+            "id": 19
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Greater/y",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966156,
+            "id": 19
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966173,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/Select",
+                "op": "Select",
+                "input0": "mean_squared_error/Equal",
+                "input1": "mean_squared_error/ones_like",
+                "input2": "mean_squared_error/num_present"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Equal",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966169,
+            "id": 20
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Equal",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966173,
+            "id": 20
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 2,
+            "ts": 1557153772381769,
+            "id": 21
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/ones_like",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966173,
+            "id": 21
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "RealDiv",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966182,
+            "dur": 6,
+            "args": {
+                "name": "mean_squared_error/div",
+                "op": "RealDiv",
+                "input0": "mean_squared_error/Sum",
+                "input1": "mean_squared_error/Select"
+            }
+        },
+        {
+            "ph": "s",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Sum",
+            "pid": 1,
+            "tid": 1,
+            "ts": 1557153772966151,
+            "id": 22
+        },
+        {
+            "ph": "t",
+            "cat": "DataFlow",
+            "name": "mean_squared_error/Sum",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966182,
+            "id": 22
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "Select",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966191,
+            "dur": 4,
+            "args": {
+                "name": "mean_squared_error/value",
+                "op": "Select",
+                "input0": "mean_squared_error/Greater",
+                "input1": "mean_squared_error/div",
+                "input2": "mean_squared_error/Greater/y"
+            }
+        },
+        {
+            "ph": "X",
+            "cat": "Op",
+            "name": "_Retval",
+            "pid": 1,
+            "tid": 0,
+            "ts": 1557153772966198,
+            "dur": 6,
+            "args": {
+                "name": "_retval_mean_squared_error/value_0_0",
+                "op": "_Retval",
+                "input0": "mean_squared_error/value"
+            }
+        }
+    ]
+}

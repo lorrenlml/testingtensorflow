@@ -1,0 +1,16 @@
+{
+    "orig_folder": "../../../DATA",
+    "hor_pred": ["10s"],
+    "dest_folder": "NN_3x300_10s_seed_1",
+    "days_info": "../../../DATA/days_info.csv",
+    "features": [["all"]],
+    "train_size": [1],
+    "hls": [50],
+    "n_nets" : 10,
+    "batch_size" : 1000,
+    "learning_rate" : 0.001,
+    "epochs" : 2,
+    "alpha": [0.0001],
+    "time_granularity":10,
+    "seed": 1
+}

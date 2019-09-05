@@ -1,0 +1,21 @@
+{
+    "orig_folder": "./",
+    "hor_pred": ["10s"],
+    "dest_folder": "/results",
+    "days_info": "./days_info.csv",
+    "features": [["all"]],
+    "train_size": [1],
+    "hls": [300, 300, 300],
+    "alpha": [0.0001],
+    "time_granularity":10,
+    "seed": 1,
+    "station":"dh10",
+    "batch_size": [64],
+    "num_classes": 1,
+    "epochs": 1,
+    "img_rows": 50,
+    "img_cols": 50,
+    "device": "GPU",
+    "device_name": "GTX950M",
+    "cut": 0.2
+}

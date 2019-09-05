@@ -1,0 +1,14 @@
+{
+    "orig_folder": "../../DATA",
+    "hor_pred": ["10s","30s","1min","90s","2min","150s","3min","4min","5min","6min","7min","8min","9min","10min","15min"],
+    "dest_folder": "/results_NN_300_300_300_seed_1",
+    "days_info": "../../DATA/days_info.csv",
+    "features": [["all"]],
+    "train_size": [1],
+    "hls": [300, 300, 300],
+    "alpha": [0.0001],
+    "time_granularity":10,
+    "seed": 1
+
+
+}

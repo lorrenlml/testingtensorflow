@@ -1,0 +1,6 @@
+dense/kernel:0 has shape (50, 50) and 2500 total paramters to train.
+dense/bias:0 has shape (50,) and 50 total paramters to train.
+dense_1/kernel:0 has shape (50, 1) and 50 total paramters to train.
+dense_1/bias:0 has shape (1,) and 1 total paramters to train.
+Total trainable parameters for this network: 2601 
+Beginning training, 1366 steps per epochGenerating a summary at global step 0Compeleted epoch 0 of 1, current mse is 0.0048  Epoch training time was 17.4981  Average time per train step: 0.0124  Average time per prof. step: 0.0585-------------------------------------
